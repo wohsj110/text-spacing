@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LMToolbar">
+        <attr name="srcLeftBtn" format="reference"/>
+        <attr name="titleRes" format="reference"/>
+        <attr name="srcRightBtn" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="LMText">
+        <attr name="fontStyle" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="semibold" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="light" value="3" />
+            <enum name="black" value="4" />
+            <enum name="thin" value="5" />
+        </attr>
+        <attr name="fontSize" format="float" />
+        <attr name="fontSizeHint" format="float" />
+        <attr name="fontSpacing" format="float" />
+        <attr name="fontAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!--CarouselViewPager-->
+    <declare-styleable name="CarouselViewPager">
+        <attr name="android:orientation"/>
+        <attr name="infinite" format="boolean"/>
+        <attr name="scrollScalingMode"/>
+        <attr name="bigScale" format="float"/>
+        <attr name="smallScale" format="float"/>
+        <attr name="minPagesOffset" format="dimension"/>
+        <attr name="sidePagesVisiblePart" format="float"/>
+        <attr name="wrapPadding" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="scrollScalingMode" format="enum">
+        <enum name="bigCurrent" value="0"/>
+        <enum name="bigAll" value="1"/>
+        <enum name="none" value="2"/>
+    </attr>
+
+    <declare-styleable name="ForegroundLinearLayout">
+        <attr name="android:foreground"/>
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundRelativeLayout">
+        <attr name="android:foreground"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingListView">
+        <attr name="sampleSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="panelHeight" format="dimension" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="paralaxOffset" format="dimension" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="dragView" format="reference" />
+        <attr name="overlay" format="boolean"/>
+        <attr name="anchorPoint" format="float" />
+        <attr name="initialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SeekArc">
+        <attr name="thumb" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="rotation" format="integer" />
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="arcColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="clockwise" format="boolean" />
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimateHorizontalProgressBar">
+        <attr name="ahp_progressColor" format="color|reference" />
+        <attr name="ahp_backgroundColor" format="color|reference" />
+        <attr name="ahp_cornerRadius" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- LM Animation Shimmer Layout-->
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="auto_start" format="boolean"/>
+        <attr name="base_alpha" format="float"/>
+        <attr name="duration" format="integer"/>
+        <attr name="repeat_count" format="integer"/>
+        <attr name="repeat_delay" format="integer"/>
+        <attr name="repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="angle" format="enum">
+            <enum name="cw_0" value="0"/>
+            <enum name="cw_90" value="90"/>
+            <enum name="cw_180" value="180"/>
+            <enum name="cw_270" value="270"/>
+        </attr>
+        <attr name="dropoff" format="float"/>
+        <attr name="fixed_width" format="dimension"/>
+        <attr name="fixed_height" format="dimension"/>
+        <attr name="intensity" format="float"/>
+        <attr name="relative_width" format="float"/>
+        <attr name="relative_height" format="float"/>
+        <attr name="shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="tilt" format="float"/>
+    </declare-styleable>
+
+
+    <!-- Line Indicator -->
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the Line indicator. -->
+        <attr name="LinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="LinePageIndicator">
+        <!-- Whether or not the selected indicator fades. -->
+        <attr name="fades" format="boolean" />
+        <!-- Length of the delay to fade the indicator. -->
+        <attr name="fadeDelay" format="integer" />
+        <!-- Length of the indicator fade to transparent. -->
+        <attr name="fadeLength" format="integer" />
+        <!-- Color of the selected line that represents the current page. -->
+        <attr name="selectedColor" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <!-- PIN EDITTEXT -->
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatLabelView">
+        <attr name="hint" format="string"/>
+        <attr name="hint_push" format="string"/>
+        <attr name="textColorHintFocused" format="color"/>
+        <attr name="textColorHintUnFocused" format="color"/>
+        <attr name="textInputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="password" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyMusicBackground">
+        <attr name="fontStyleTextNumber" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="semibold" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="light" value="3" />
+            <enum name="black" value="4" />
+            <enum name="thin" value="5" />
+        </attr>
+        <attr name="fontColorTextNumber" format="color" />
+        <attr name="fontSizeTextNumber" format="float" />
+        <attr name="fontSpacingTextNumber" format="float" />
+        <attr name="fontAllCapsTextNumber" format="boolean" />
+
+        <attr name="fontStyleTextNormal" format="enum">
+            <enum name="regular" value="0" />
+            <enum name="semibold" value="1" />
+            <enum name="bold" value="2" />
+            <enum name="light" value="3" />
+            <enum name="black" value="4" />
+            <enum name="thin" value="5" />
+        </attr>
+        <attr name="fontColorTextNormal" format="color" />
+        <attr name="fontSizeTextNormal" format="float" />
+        <attr name="fontSpacingTextNormal" format="float" />
+        <attr name="fontAllCapsTextNormal" format="boolean" />
+    </declare-styleable>
+</resources>

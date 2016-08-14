@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.dylan.scalex.MainActivity">
+
+    <com.dylan.scalex.view.LMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="My Music"
+        app:fontSize="11"
+        app:fontSpacing="3.6"
+        app:fontStyle="semibold"/>
+
+    <com.dylan.scalex.view.LMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="We’re a little worried that our playlist of the 100 best party songs ever recorded may actually cause your dance floor to spontaneously combust in a firework explosion of pure joy and body- moving ecstasy."
+        app:fontSize="15.4"
+        app:fontSpacing="3.2"
+        app:fontStyle="semibold"/>
+
+    <com.dylan.scalex.view.LMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="We’re a little worried that our playlist of the 100 best party songs ever recorded may actually cause your dance floor to spontaneously combust in a firework explosion of pure joy and body- moving ecstasy."
+        app:fontSize="15.4"
+        app:fontStyle="semibold"/>
+
+</LinearLayout>
