@@ -17,6 +17,7 @@ import android.util.TypedValue;
 import android.widget.EditText;
 
 import com.dylan.scalex.R;
+import com.dylan.scalex.util.FontCache;
 import com.dylan.scalex.util.LMConstant;
 import com.dylan.scalex.util.LMUtils;
 
@@ -94,11 +95,11 @@ public class LMEditText extends EditText {
     }
 
     public boolean setCustomFont(Context context, String customFont) {
-        try {
-            Typeface tf = Typeface.createFromAsset(context.getAssets(), "fonts/" + customFont);
+        Typeface tf = FontCache.get(context, "fonts/" + customFont);
+        if (tf != null) {
             setTypeface(tf);
             return true;
-        } catch (Exception e) {
+        } else {
             return false;
         }
     }

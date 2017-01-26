@@ -20,6 +20,7 @@ import android.util.TypedValue;
 import android.widget.TextView;
 
 import com.dylan.scalex.R;
+import com.dylan.scalex.util.FontCache;
 import com.dylan.scalex.util.LMConstant;
 import com.dylan.scalex.util.LMUtils;
 
@@ -93,11 +94,11 @@ public class LMTextView extends TextView {
     }
 
     public boolean setCustomFont(Context context, String customFont) {
-        try {
-            Typeface tf = Typeface.createFromAsset(context.getAssets(), "fonts/" + customFont);
+        Typeface tf = FontCache.get(context, "fonts/" + customFont);
+        if (tf != null) {
             setTypeface(tf);
             return true;
-        } catch (Exception e) {
+        } else {
             return false;
         }
     }
